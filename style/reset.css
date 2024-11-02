@@ -15,6 +15,7 @@
 
 a, a:link, a:visited  {
     text-decoration: none;
+	color: #fff;
 }
 
 a:hover  {
@@ -25,12 +26,13 @@ a:hover  {
 
 aside, nav, footer, header, section, main {
 	display: block;
+	
 }
 
 h1, h2, h3, h4, h5, h6, p {
     font-size: inherit;
 	font-weight: inherit;
-	border: 1px solid red;
+	
 
 }
 
@@ -38,13 +40,11 @@ ul, ul li {
 	list-style: none;
 }
 
-img {
-	vertical-align: top;
-}
 
 img, svg {
-	max-width: 100%;
-	height: auto;
+	vertical-align: top;
+	width: 140px;
+	height: 58px;
 }
 
 address {
@@ -67,9 +67,18 @@ input::-ms-clear {
 button, input[type="submit"] {
     display: inline-block;
     box-shadow: none;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0);
     background: none;
     cursor: pointer;
+	margin-top: 20px;
+	width: 160px;
+	height: 51px;
+	border: 3px solid white;
+	font-family:"Open Sans", sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+
+
 }
 
 input:focus, input:active,
