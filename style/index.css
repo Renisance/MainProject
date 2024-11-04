@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 .header {
-  background: url(/image/Rectangle.png);
+  background: url(../image/Rectangle.png);
   background-size: cover;
   color: #fff;
 }
