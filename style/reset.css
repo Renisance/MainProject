@@ -15,7 +15,11 @@
 
 a, a:link, a:visited  {
     text-decoration: none;
-	color: #fff;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	align-content:flex-end
 }
 
 a:hover  {
@@ -43,8 +47,7 @@ ul, ul li {
 
 img, svg {
 	vertical-align: top;
-	width: 140px;
-	height: 58px;
+	
 }
 
 address {

@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+    /*Модификатор размеров блоков*/
+    .main-sections_size{
+        width: 1110px;
+        margin-bottom: 150px;
+    }
+    .catalog-project__head{
+        display: flex;
+        margin-bottom: 40px;
+    
+    }
+    /*Блок с синими линиями*/
+    .head__lines_size{
+        width: 100px;
+        height: 20px;
+        margin-top: 20px;
+        
+    }
+    .head__first-line_size{
+        width:100px;
+        border-top: 2px solid #005bc1;
+        border-bottom: 1px solid #005bc1; 
+        margin-bottom: 12px;
+    
+    }
+    .head__sec-line_size{
+    display: flex;
+    justify-content: flex-end;
+    }
+    .head__line-s_size{
+        width:50px;
+        border-top: 2px solid #005bc1;
+        border-bottom: 1px solid #005bc1; 
+    }
+    
+    /*Заголовок*/
+    .head__title{
+        font-family: "Oswald";
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 30px;
+        margin-left: 35px;
+        margin-top: 5px;
+        letter-spacing: 2px;
+        color: #343434;
+    }
+   
+    /*Кнопки*/
+    .catalog-rent__btn{
+        display: flex;
+        flex-direction: row;
+        flex-grow:1;
+        justify-content: flex-end;
+        }
+    .catalog-rent__left-btn_size, .catalog-rent__right-btn_size {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:55px;
+            height: 55px;
+            border: 2px solid #005BC1;
+        }
+        .catalog-rent__right-btn_size{
+            border-left: none;
+        }
+        /*Стрелки на кнопках*/
+        /*Левая*/
+        .catalog-rent__left-btn_rotate{
+            width: 15px;
+            height: 15px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            border-top:2px solid #005BC1;
+            border-left: 2px solid #005BC1;
+        }
+        /*Правая*/
+        .catalog-rent__right-btn_rotate{
+            width: 15px;
+            height: 15px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            border-top:2px solid #005BC1;
+            border-right: 2px solid #005BC1;
+        }
+         /*Основной контент*/
+    .main-cont{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .block-preview__text{
+        width: 350px;
+        font-family: "Open Sans";
+        font-size:18px;
+        font-weight: 100;  
+        color: #343434;
+        justify-content: start;
+    }
+
+    /*Правый блок*/
+    .catalog-rent{
+        display: flex;
+        flex-direction: column;
+        width: 665px;
+        border: 3px solid #005BC1;
+        padding: 20px 20px 50px;
+    }
+    .catalog-rent__head-block{
+        display: flex;
+    }
+    .catalog-rent_title{
+        font-family: "Oswald";
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #343434; 
+        padding-top: 15px;
+    }
+    .img-rent{
+       width: 290px;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+    }
+    /*Список правого блока*/
+    .list{
+        list-style-type: disc;
+        padding-bottom: 20px;
+        
+    }
+    .characteristics-list{
+    font-family: "Open Sans";
+    font-size:14px;
+    font-weight: 50;  
+    color: #343434;
+    padding-left: 10px;
+    width: 280px;
+    
+    }
+    .block-item-characteristics{
+        padding-right: 20px;
+    }
+    .characteristics-list__title{
+        font-family: "Oswald";
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #343434; 
+        padding-top: 30px;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+    .block-rent{
+    display: flex;
+    }
+
+    /*Адаптивная верстка*/
+    @media(max-width:1020px) {
+        .main-cont{
+            justify-content: space-evenly;
+        }
+        .block-preview__text{
+            margin-bottom: 100px;
+        }
+        .catalog-project__head{
+            margin-left: 30px;
+        }
+        .block-rent{
+            flex-direction: column;
+            margin: 40px;
+        }
+        .catalog-rent__head-block{
+            flex-direction: column;
+        }
+        .catalog-rent{
+            width: 400px;
+            padding: 5px;
+        }
+        .catalog-rent_title{
+            padding-top:0;
+        }
+    }
+    @media(max-width:780px) {
+        .main-cont{
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        .block-preview__text{
+            margin-bottom: 50px;
+        }
+        .catalog-project__head{
+            margin-left: 30px;
+            margin-bottom: 100px;
+        }
+        .block-rent{
+            flex-direction: column;
+        }
+        .catalog-rent__head-block{
+            flex-direction: column;
+        }
+        .catalog-rent{
+            width: 400px;
+            padding: 5px;
+        }
+        .catalog-rent_title{
+            padding-top:0 ;
+        }
+    }
+    @media(max-width:430px) {
+        .head__title{
+            font-size:20px;
+        }
+        .block-preview__text{
+            width: 300px;
+        }
+        .catalog-project__head{
+            width: 300px;
+        }
+        .block-rent{
+            padding: 10px;
+            margin: 0;
+        }
+        .catalog-rent{
+            width: 300px;
+        }
+        .catalog-rent_title{
+            margin-bottom:20px ;
+        }
+    }

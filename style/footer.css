@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import "reset.css";
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 255px;
+    background-color: #005BC1;
+    color: #FFF;
+    position:relative;
+    bottom: 0;
+	width: 100%;
+    
+
+}
+/* Первая строка */
+.footer__address{
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+    padding-top:30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #FFF;
+    
+}
+.address__title{
+    font-family: "Oswald";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.address__first-text, .address__second-text{
+display: flex;
+font-family: "Open Sans";
+font-size:14px;
+font-weight: 600;
+align-items: center;  
+}
+/* Вторая строка */
+.footer__cont-link{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 600px;
+    margin:23px 0 23px 0;
+    gap: 10px;
+    font-family: "Open Sans";
+    font-size:14px;
+    font-weight: 100;
+}
+hr {   
+    background-color:#fff;
+    height: 1px;
+  }
+
+/*Третья строка*/
+.footer__copyright-company{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 29px 0 29px 0;
+font-family: "Open Sans";
+font-size:14px;
+font-weight: 100;
+}
+/* Адаптивная верстка */
+@media(max-width:1120px){
+    .footer{
+        height: 400px;
+        bottom: 0;
+        width: 100%;
+    }
+    .address__title{
+        width: 400px; 
+    }
+    .footer__address{
+        width: 600px;
+    }
+
+    .footer__cont-link{
+        width: 350px;
+    }
+}
+@media(max-width:610px){
+.footer{
+    height: 400px;
+    bottom: 0;
+    width: 100%;
+}
+.footer__address{
+    width: 350px;
+}
+.footer__cont-link{
+    grid-template-columns: 1fr 1fr;
+}
+.footer__cont-link{
+    width: 350px;
+}
+}
+@media(max-width:530px){
+    .footer{
+        height: 400px;
+        bottom: 0;
+        width: 100%;
+    }
+    .footer__address{
+        flex-direction: column;
+    }
+.footer__copyright-company{
+    flex-direction: column;
+}
+}
