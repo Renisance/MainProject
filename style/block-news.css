@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+/*Контейнер превью*/
+.news-all-preview{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Модификатор размеров блоков*/
+.main-sections_size{
+    width: 1110px;
+    margin-bottom: 150px;
+}
+.news-cont__head{
+    display: flex;
+    margin-bottom: 70px;
+
+}
+/*Блок с синими линиями*/
+.head__lines_size{
+    width: 100px;
+    height: 20px;
+    margin-top: 20px;
+    
+}
+.head__first-line_size{
+    width:100px;
+    border-top: 2px solid #005bc1;
+    border-bottom: 1px solid #005bc1; 
+    margin-bottom: 12px;
+
+}
+.head__sec-line_size{
+display: flex;
+justify-content: flex-end;
+}
+.head__line-s_size{
+    width:50px;
+    border-top: 2px solid #005bc1;
+    border-bottom: 1px solid #005bc1; 
+}
+
+/*Заголовок и кнопка*/
+.head__block-title-btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+/*Заголовок*/
+.head__title{
+    font-family: "Oswald";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 35px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    color: #343434;
+}
+/*Кнопка*/
+.head__head-btn{
+    width: 190px;
+    border: 1px solid;
+    background-color: #005bc1;
+    color: #FFFFFF;
+    margin-top: 5px;
+
+}
+
+/*Первое превью новостей*/
+.news-cont__content-first{
+    display: flex;
+    width: 540px;
+}
+.news-cont__image{
+    width: 255px;
+    height: 245px;
+    margin-right: 30px;
+}
+.block-text__header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 40px; 
+}
+.block-text__title{
+font-family: "Oswald";
+font-optical-sizing: auto;
+font-weight: 400;
+font-size: 18px;
+color: #343434;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+.block-text__date{
+    font-family: "Open Sans";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 14px;
+    color: #979797;   
+}
+.block-text__small-text{
+    font-family: "Open Sans";
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 14px;
+    color: #343434;    
+    margin-bottom: 20px;
+}
+#text{
+    text-decoration:underline;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    color: #343434; 
+}
+/*Второе и третье превью новостей*/
+.news-cont__content{
+    width: 225px;
+}
+.second-cont{
+margin:0px 60px ;
+}
+.news-cont__title{
+margin-bottom: 20px;
+font-family: "Oswald";
+font-optical-sizing: auto;
+font-weight: 400;
+font-size: 18px;
+color: #343434;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+.title-robe{
+    width: 80px;
+}
+.news-cont__second-text{
+font-family: "Open Sans";
+font-optical-sizing: auto;
+font-weight: 300;
+font-size: 14px;
+color: #343434;    
+margin-bottom: 20px;
+}
+.news-cont__block-img-date{
+    display: flex;
+justify-content: space-between;
+align-items: flex-end;
+}
+.block-img-date__image{
+    width: 128px;
+    height: 115px;
+}
+.block-img-text__date{
+    font-family: "Open Sans";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 14px;
+    color: #979797; 
+}
+
+/* Адаптивная верстка */
+@media (max-width:1170px){
+.news-cont{
+margin-left: 30px;
+}
+}
+@media (max-width:1140px){
+.news-all-preview__link{
+    margin-bottom: 10px;
+}
+}
+@media (max-width:650px){
+
+
+.block-text__header{
+    margin-bottom: 20px;
+}
+.news-cont__content-first{
+    flex-direction: column;
+    margin-bottom: 30px;
+    }
+    .block-text__small-text{
+        margin-bottom: 5px;
+    }
+    
+}
+@media (max-width:600px){
+.second-cont{
+    margin-left: 0;
+}
+.news-cont__block-text{
+    width: 400px;
+}
+}
+@media (max-width:570px){
+    .news-cont__content-first, .news-all-preview__link{
+        width: 400px;
+    }
+    .news-all-preview{
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .head__head-btn{
+        display: none;
+    }
+}
+@media (max-width:440px){
+    .news-cont__content-first, .news-all-preview__link, .news-cont__block-text{
+        width: 300px;
+}
+.head__title{
+    font-size:20px;
+}
+}

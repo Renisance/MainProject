@@ -1,3 +1,12 @@
-@import "/style/reset.css";
-@import "/style/index.css";
-@import "/style/adaptability.css";
+@import "reset.css";
+@import "header.css";
+@import "main.css";
+@import "block-projects.css";
+@import "block-catalog.css";
+@import "block-rent.css";
+@import "block-news.css";
+@import "footer.css";
+
+
+
+

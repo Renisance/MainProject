@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+    /*Модификатор размеров блоков*/
+    .main-sections_size{
+        width: 1110px;
+        margin-bottom: 150px;
+    }
+    .catalog-project__head{
+        display: flex;
+        margin-bottom: 70px;
+    
+    }
+    /*Блок с синими линиями*/
+    .head__lines_size{
+        width: 100px;
+        height: 20px;
+        margin-top: 20px;
+        
+    }
+    .head__first-line_size{
+        width:100px;
+        border-top: 2px solid #005bc1;
+        border-bottom: 1px solid #005bc1; 
+        margin-bottom: 12px;
+    
+    }
+    .head__sec-line_size{
+    display: flex;
+    justify-content: flex-end;
+    }
+    .head__line-s_size{
+        width:50px;
+        border-top: 2px solid #005bc1;
+        border-bottom: 1px solid #005bc1; 
+    }
+    
+    /*Заголовок*/
+    .head__title-sec-block{
+        font-family: "Oswald";
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 30px;
+        margin-left: 35px;
+        margin-top: 5px;
+        letter-spacing: 2px;
+        color: #343434;
+    }
+    /*Блок ссылок разделов ROBE и COMPULITE*/
+    .block-groups{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+   
+    .block-groups__link-slide-robe{
+        margin-right:40px;
+        
+    }
+    .link-font_osvald{
+        font-family: "Oswald";
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 1px;
+        color: #343434;
+    }
+    .robe::before{
+        content: "ROBE";
+        color: #005BC1;
+        border-bottom: 2px solid #005BC1;   
+    }
+    .link-font_osvald:focus{
+        color: #005BC1;
+        border-bottom: 2px solid #005BC1;
+    }
+    /*БЛОК С ИЗОБРАЖЕНИЯМИ ССЫЛОК КАТАЛОГА*/
+    .link-catalog{
+        display: flex;
+        justify-content: space-between;
+    }
+    .block-img__link{
+        display: flex;
+        justify-content: center;
+        border:3px solid #005BC1;
+        width: 350px;
+        height: 300px;
+    }
+    .block-img__controllers-img, .block-img__accessories-img{
+        object-fit: none;
+    }
+    .block-img__block-title-catalog{
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        background-color: #005BC1;
+        color: #FFFFFF;
+        width: 265px;
+        height: 86px;
+        position: relative;
+        top: 285px;
+        left: 85px;
+        font-family: "Oswald";
+        font-weight: 350;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-top: -85px;
+    }
+    
+/*Адаптивная верстка*/
+@media (max-width:1200px){
+.catalog-project{
+    margin-left: 20px;
+}
+}
+@media (max-width:1060px){
+    .link-catalog{
+        display: grid;
+        grid-template-columns: 350px 350px;
+        justify-content: start;
+        gap: 40px;
+    
+    }
+
+}
+
+@media (max-width:825px){
+    .link-catalog{
+        grid-template-columns: 350px;
+        justify-content: center;
+    }
+}
+@media (max-width:500px){
+    .link-catalog{
+        margin-left: 50px;
+        width: 350px;
+    }
+
+}
+@media(max-width:440px) {
+.head__title-sec-block{
+    font-size:20px;  
+}
+}
+@media(max-width:430px) {
+    .catalog-project__head{
+        margin-left: 35px;
+    }
+    .catalog-project{
+        width: 380px;
+    }
+    .link-catalog{
+        margin-left: 5px;
+        
+    }
+    .head__title-sec-block{
+        font-size:20px;  
+    }
+    .block-img__link{
+        width: 380px;
+    }
+    .block-img__block-title-catalog{
+        width: 215px;
+        left: 0;
+    }
+    
+}
+@media (max-width:414px){
+   
+    .block-img__link{
+        width: 300px;
+    }
+    .block-title-catalog{
+        width: 240px;
+    }
+}
+@media (max-width:375px){
+    .link-catalog{
+        margin-left: 10px;
+        
+    }
+}
